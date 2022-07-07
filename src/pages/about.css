@@ -1,0 +1,11 @@
+.about-container{
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+::-webkit-scrollbar{
+    display: none;
+}
