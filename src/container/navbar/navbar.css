@@ -3,36 +3,43 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 2rem;
    background: transparent;
     font-family:Arial, Helvetica, sans-serif;
     position: relative;
-    z-index: 3;
-    
+    width: 100vw;
+    z-index: 100;
+    max-height: 2px;
+    min-height: 2px;
   
    
 
 
 }
-.navbar__container img{
- height: 5rem;
- width: 5rem;
- margin-top: 0;
- margin: 10px;
+.navbar__container-logo{
+ height: 2rem;
+ width: 2rem;
+ transform: scale(1.8);
+ margin: 0;
+ padding: 0;
  display: flex;
  justify-content: center;
  cursor: pointer;
 
 }
+
 img:hover{
     filter: /*invert(73%)*/ sepia(36%) saturate(4866%) hue-rotate(359deg) brightness(103%) contrast(107%);
 
 }
+
 .navbar__container-list ul{
     display: flex;
  flex-direction: row;
  list-style: none;
  cursor: pointer;
- color: white;
+ position: relative;
+ color: black;
 }
 ul li{
     margin: 20px;
@@ -59,17 +66,13 @@ a:hover{
     align-items: center;
     flex-direction: column;
     text-align: right;
-    padding: 2rem;
     position: absolute;
-    top: 40px;
-    right: 0;
-    margin-top: 1rem;
-    min-width: 210px;
-    border-radius: 5px;
+    top: 50px;
     box-shadow: 0 0 5 rgba(0,0,0,0.2);
-    background-color: orange;
+    background-color: rgba(255, 166, 0, 0.865);
     border-top-left-radius: 15% ;
     border-bottom-right-radius: 15%;
+    right: 0;
 }
 .navbar-menu_container ul{
     list-style: none;
@@ -96,9 +99,9 @@ a:hover{
 }
 @media screen and (max-width: 280px){
     .navbar__container{
-        margin: 5rem;
-        margin-top: 0;
-        margin-bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        
     }
     a:hover{
         color: orange;

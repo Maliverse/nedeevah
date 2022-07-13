@@ -28,11 +28,11 @@ const Navbar = () => {
         <div className="navbar__container" id='Home'> 
         
 
-       
+        <Link to='/'>
                 <div className="navbar__container-logo">
-                <img src={logo} alt="logo"/>
+                <img src={logo} alt="logo" />
                 </div>
-                
+       </Link>
                 <div className="navbar__container-list">
                 <Menu  />
                 </div>
@@ -40,8 +40,8 @@ const Navbar = () => {
 
         <div className="navbar-menu">
         {toggleMenu
-          ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
-          : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />}
+          ? <RiCloseLine color="#000" size={27} onClick={() => setToggleMenu(false)} />
+          : <RiMenu3Line color="#000" size={27} onClick={() => setToggleMenu(true)} />}
         {toggleMenu && (
         <div className="navbar-menu_container scale-up-center">
           <div className="navbar-menu_container-list">

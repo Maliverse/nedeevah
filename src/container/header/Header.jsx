@@ -4,21 +4,18 @@ import './header.css';
 const Header = () => {
     return(
         <div className='header__container'>
-            <div className='header__background-image kenburns-bottom '>
-            </div>
+
+            <div className='header__img-div'>
+            <div className='header__background-image kenburns-bottom  '> </div>
             <div className='header__container-text'>
             <h1 className='header__title'>Nedeevah Foundation</h1>
             <p>A future, full of hope.</p>
-            <div>
-
                <div className='buttons'>
+               <button>Volunteer</button>
+               <button className='donate__button'>Donate</button>
                </div>
-            <button>Volunteer</button>
-            <button className='donate__button'>Donate</button>
             </div>
                </div> 
-              
-           
         </div>
     )
 }

@@ -4,9 +4,9 @@ import './about.css';
 export default function About () {
     return ( <div className='about-container'>
 
-       <p>
+       <h1>
        About Nedeevah
-        </p> 
+        </h1> 
     </div> );
 }
  
